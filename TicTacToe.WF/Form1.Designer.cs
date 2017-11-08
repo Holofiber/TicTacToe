@@ -141,7 +141,6 @@
             this.btn22.Name = "btn22";
             this.btn22.Size = new System.Drawing.Size(106, 83);
             this.btn22.TabIndex = 8;
-            this.btn22.Text = "X";
             this.btn22.UseVisualStyleBackColor = true;
             // 
             // btn21
@@ -153,7 +152,6 @@
             this.btn21.Name = "btn21";
             this.btn21.Size = new System.Drawing.Size(104, 83);
             this.btn21.TabIndex = 7;
-            this.btn21.Text = "X";
             this.btn21.UseVisualStyleBackColor = true;
             // 
             // btn20
@@ -165,7 +163,6 @@
             this.btn20.Name = "btn20";
             this.btn20.Size = new System.Drawing.Size(104, 83);
             this.btn20.TabIndex = 6;
-            this.btn20.Text = "X";
             this.btn20.UseVisualStyleBackColor = true;
             // 
             // btn11
@@ -177,7 +174,6 @@
             this.btn11.Name = "btn11";
             this.btn11.Size = new System.Drawing.Size(104, 83);
             this.btn11.TabIndex = 4;
-            this.btn11.Text = "X";
             this.btn11.UseVisualStyleBackColor = true;
             // 
             // btn10
@@ -189,7 +185,6 @@
             this.btn10.Name = "btn10";
             this.btn10.Size = new System.Drawing.Size(104, 83);
             this.btn10.TabIndex = 3;
-            this.btn10.Text = "X";
             this.btn10.UseVisualStyleBackColor = true;
             // 
             // btn02
@@ -201,7 +196,6 @@
             this.btn02.Name = "btn02";
             this.btn02.Size = new System.Drawing.Size(106, 83);
             this.btn02.TabIndex = 2;
-            this.btn02.Text = "X";
             this.btn02.UseVisualStyleBackColor = true;
             // 
             // btn01
@@ -213,7 +207,6 @@
             this.btn01.Name = "btn01";
             this.btn01.Size = new System.Drawing.Size(104, 83);
             this.btn01.TabIndex = 1;
-            this.btn01.Text = "X";
             this.btn01.UseVisualStyleBackColor = true;
             // 
             // btn00
@@ -225,7 +218,6 @@
             this.btn00.Name = "btn00";
             this.btn00.Size = new System.Drawing.Size(104, 83);
             this.btn00.TabIndex = 0;
-            this.btn00.Text = "X";
             this.btn00.UseVisualStyleBackColor = true;
             // 
             // btn12
@@ -237,7 +229,6 @@
             this.btn12.Name = "btn12";
             this.btn12.Size = new System.Drawing.Size(106, 83);
             this.btn12.TabIndex = 5;
-            this.btn12.Text = "X";
             this.btn12.UseVisualStyleBackColor = true;
             // 
             // Form1

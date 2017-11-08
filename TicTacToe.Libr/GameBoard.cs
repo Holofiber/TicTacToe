@@ -4,11 +4,13 @@ namespace TicTacToe.Libr
 {
     public class GameBoard
     {
+        private string emptyCell = "*";
+
         private readonly string[,] ticTac;
 
         public string[,] TicTacData
         {
-          get { return ticTac; }
+            get { return ticTac; }
         }
         public GameBoard()
         {
@@ -25,7 +27,10 @@ namespace TicTacToe.Libr
             {
                 for (int j = 0; j < 3; j++)
 
-                    ticTac[i, j] = "*";
+                {
+                    var s = emptyCell;
+                    ticTac[i, j] = s;
+                }
             }
         }
 
@@ -52,62 +57,49 @@ namespace TicTacToe.Libr
 
         public bool CheckWin()
         {
+            int i, n = 3;
+            var checkWinner = false;
 
-            {
-                var checkWinner = false;
+            var playerX = "X";
+            var playerO = "Y";
 
-                //Horiz
-                if (ticTac[0, 0] == "X" || ticTac[0, 0] == "Y")
+            
+            for (i = 0; i < n; i++)
+            { 
+                //horizontall
+                if ((ticTac[i, 0] == ticTac[i, 1]) &&
+                    (ticTac[i, 1] == ticTac[i, 2]) &&
+                    (ticTac[i, 0] != emptyCell))
                 {
-                    if ((ticTac[0, 0] == ticTac[0, 1]) && (ticTac[0, 1] == ticTac[0, 2]))
-                        checkWinner = (true);
-                }
-
-                else if (ticTac[1, 0] == "X" || ticTac[1, 0] == "Y")
-                {
-                    if ((ticTac[1, 0] == ticTac[1, 1]) && (ticTac[1, 1] == ticTac[1, 2]))
-                        checkWinner = (true);
-                }
-                else if (ticTac[2, 0] == "X" || ticTac[2, 0] == "Y")
-                {
-                    if ((ticTac[2, 0] == ticTac[2, 1]) && (ticTac[2, 1] == ticTac[2, 2]))
-                        checkWinner = (true);
-                }
-
+                    checkWinner = (true);
+                }   
+                
                 //vertical
-                if (ticTac[0, 0] == "X" || ticTac[0, 0] == "Y")
+                if ((ticTac[0, i] == ticTac[1, i]) &&
+                    (ticTac[1, i] == ticTac[2, i]) &&
+                    (ticTac[0, i] != emptyCell))
                 {
-                    if ((ticTac[0, 0] == ticTac[1, 0]) && (ticTac[1, 0] == ticTac[2, 0]))
-                        checkWinner = (true);
+                    checkWinner = (true);
                 }
-
-                else if (ticTac[1, 1] == "X" || ticTac[1, 1] == "Y")
-                {
-                    if ((ticTac[0, 1] == ticTac[1, 1]) && (ticTac[1, 1] == ticTac[2, 1]))
-                        checkWinner = (true);
-                }
-                else if (ticTac[1, 2] == "X" || ticTac[1, 2] == "Y")
-                {
-                    if ((ticTac[0, 2] == ticTac[1, 2]) && (ticTac[1, 2] == ticTac[2, 2]))
-                        checkWinner = (true);
-                }
-                //diagonal
-                if (ticTac[0, 0] == "X" || ticTac[0, 0] == "Y")
-                {
-                    if ((ticTac[0, 0] == ticTac[1, 1]) && (ticTac[1, 1] == ticTac[2, 2]))
-                        checkWinner = (true);
-                }
-
-                else if (ticTac[1, 1] == "X" || ticTac[1, 1] == "Y")
-                {
-                    if ((ticTac[0, 2] == ticTac[1, 1]) && (ticTac[1, 1] == ticTac[2, 0]))
-                        checkWinner = (true);
-                }
-                return checkWinner;
-
             }
-        }
+            
+            //diagonal
+            if (ticTac[1, 1] != emptyCell)
+            {
+                if ((ticTac[0, 0] == ticTac[1, 1]) &&
+                    (ticTac[1, 1] == ticTac[2, 2]))
+                {
+                    checkWinner = (true);
+                }
 
-       
+                if ((ticTac[0, 2] == ticTac[1, 1]) &&
+                    (ticTac[1, 1] == ticTac[2, 0]))
+                {
+                    checkWinner = (true);
+                }
+            }
+
+            return checkWinner;
+        }
     }
 }

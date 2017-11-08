@@ -39,7 +39,8 @@ namespace TicTacToe.Console
                     var checkWin = GameBoard.CheckWin();
                     if (checkWin)
                     {
-
+                        ClearScreen();
+                        GameBoard.PrintBoard();
                         System.Console.WriteLine($"{Player.Name} win!");
                         break;
                     }
