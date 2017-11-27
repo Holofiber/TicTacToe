@@ -2,11 +2,11 @@
 {
     public class PlayerTurn
     {
-        private int x;
-        private int y;
+        public static int x;
+        public static int y;
 
         public int X
-        {
+        { 
             get { return x; }
             set
             {

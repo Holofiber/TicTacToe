@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace TicTacToe.Libr
 {
+
     public class GameBoard
     {
+        List<int> checkWinList = new List<int>();
         private string emptyCell = "*";
 
         private readonly string[,] ticTac;
@@ -12,13 +15,13 @@ namespace TicTacToe.Libr
         {
             get { return ticTac; }
         }
+
         public GameBoard()
         {
             ticTac = new string[3, 3];
 
             ClearGameBoard();
         }
-
 
 
         public void ClearGameBoard()
@@ -57,49 +60,53 @@ namespace TicTacToe.Libr
 
         public bool CheckWin()
         {
-            int i, n = 3;
+            int j, i, lineSize = 3;
             var checkWinner = false;
+            
 
             var playerX = "X";
             var playerO = "Y";
 
-            
-            for (i = 0; i < n; i++)
-            { 
-                //horizontall
-                if ((ticTac[i, 0] == ticTac[i, 1]) &&
-                    (ticTac[i, 1] == ticTac[i, 2]) &&
-                    (ticTac[i, 0] != emptyCell))
-                {
-                    checkWinner = (true);
-                }   
-                
-                //vertical
-                if ((ticTac[0, i] == ticTac[1, i]) &&
-                    (ticTac[1, i] == ticTac[2, i]) &&
-                    (ticTac[0, i] != emptyCell))
-                {
-                    checkWinner = (true);
-                }
-            }
-            
-            //diagonal
-            if (ticTac[1, 1] != emptyCell)
-            {
-                if ((ticTac[0, 0] == ticTac[1, 1]) &&
-                    (ticTac[1, 1] == ticTac[2, 2]))
-                {
-                    checkWinner = (true);
-                }
 
-                if ((ticTac[0, 2] == ticTac[1, 1]) &&
-                    (ticTac[1, 1] == ticTac[2, 0]))
-                {
-                    checkWinner = (true);
-                }
+            int axisX = PlayerTurn.x;
+            int axisY = PlayerTurn.y;
+
+
+            for (i = axisX + 1; i < axisX + lineSize; i++)
+            {
+                checkHorizontal(i);
+                checkVertical(i);
+                checkDiagonal1(i);
             }
+
+
+           
+           
 
             return checkWinner;
+        }
+
+        public void checkVertical(int i)
+        {
+
+        }
+
+        public void checkHorizontal(int i)
+        {
+        }
+
+        public void checkDiagonal1(int i)
+        {
+        }
+
+        public void checkWin(int i)
+        {
+            checkWinList.Add(i);
+        }
+
+        public void cleanList(int i)
+        {
+            checkWinList.Clear();
         }
     }
 }

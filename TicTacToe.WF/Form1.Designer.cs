@@ -60,7 +60,7 @@
             this.tlpMainPanel.RowCount = 2;
             this.tlpMainPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpMainPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
-            this.tlpMainPanel.Size = new System.Drawing.Size(338, 305);
+            this.tlpMainPanel.Size = new System.Drawing.Size(620, 431);
             this.tlpMainPanel.TabIndex = 2;
             // 
             // tlpTurn
@@ -73,19 +73,19 @@
             this.tlpTurn.Controls.Add(this.BtnTurn, 0, 0);
             this.tlpTurn.Controls.Add(this.tbY, 2, 0);
             this.tlpTurn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tlpTurn.Location = new System.Drawing.Point(3, 276);
+            this.tlpTurn.Location = new System.Drawing.Point(3, 402);
             this.tlpTurn.Name = "tlpTurn";
             this.tlpTurn.RowCount = 1;
             this.tlpTurn.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tlpTurn.Size = new System.Drawing.Size(332, 26);
+            this.tlpTurn.Size = new System.Drawing.Size(614, 26);
             this.tlpTurn.TabIndex = 2;
             // 
             // tbX
             // 
             this.tbX.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbX.Location = new System.Drawing.Point(113, 3);
+            this.tbX.Location = new System.Drawing.Point(207, 3);
             this.tbX.Name = "tbX";
-            this.tbX.Size = new System.Drawing.Size(104, 20);
+            this.tbX.Size = new System.Drawing.Size(198, 20);
             this.tbX.TabIndex = 0;
             // 
             // BtnTurn
@@ -93,7 +93,7 @@
             this.BtnTurn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.BtnTurn.Location = new System.Drawing.Point(3, 3);
             this.BtnTurn.Name = "BtnTurn";
-            this.BtnTurn.Size = new System.Drawing.Size(104, 20);
+            this.BtnTurn.Size = new System.Drawing.Size(198, 20);
             this.BtnTurn.TabIndex = 2;
             this.BtnTurn.Text = "Turn";
             this.BtnTurn.UseVisualStyleBackColor = true;
@@ -102,9 +102,9 @@
             // tbY
             // 
             this.tbY.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tbY.Location = new System.Drawing.Point(223, 3);
+            this.tbY.Location = new System.Drawing.Point(411, 3);
             this.tbY.Name = "tbY";
-            this.tbY.Size = new System.Drawing.Size(106, 20);
+            this.tbY.Size = new System.Drawing.Size(200, 20);
             this.tbY.TabIndex = 1;
             // 
             // tlpGameBoard
@@ -129,7 +129,7 @@
             this.tlpGameBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tlpGameBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tlpGameBoard.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tlpGameBoard.Size = new System.Drawing.Size(332, 267);
+            this.tlpGameBoard.Size = new System.Drawing.Size(614, 393);
             this.tlpGameBoard.TabIndex = 1;
             // 
             // btn22
@@ -137,9 +137,9 @@
             this.btn22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn22.Enabled = false;
             this.btn22.Font = new System.Drawing.Font("Wide Latin", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn22.Location = new System.Drawing.Point(223, 181);
+            this.btn22.Location = new System.Drawing.Point(411, 265);
             this.btn22.Name = "btn22";
-            this.btn22.Size = new System.Drawing.Size(106, 83);
+            this.btn22.Size = new System.Drawing.Size(200, 125);
             this.btn22.TabIndex = 8;
             this.btn22.UseVisualStyleBackColor = true;
             // 
@@ -148,9 +148,9 @@
             this.btn21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn21.Enabled = false;
             this.btn21.Font = new System.Drawing.Font("Wide Latin", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn21.Location = new System.Drawing.Point(113, 181);
+            this.btn21.Location = new System.Drawing.Point(207, 265);
             this.btn21.Name = "btn21";
-            this.btn21.Size = new System.Drawing.Size(104, 83);
+            this.btn21.Size = new System.Drawing.Size(198, 125);
             this.btn21.TabIndex = 7;
             this.btn21.UseVisualStyleBackColor = true;
             // 
@@ -159,9 +159,9 @@
             this.btn20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn20.Enabled = false;
             this.btn20.Font = new System.Drawing.Font("Wide Latin", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn20.Location = new System.Drawing.Point(3, 181);
+            this.btn20.Location = new System.Drawing.Point(3, 265);
             this.btn20.Name = "btn20";
-            this.btn20.Size = new System.Drawing.Size(104, 83);
+            this.btn20.Size = new System.Drawing.Size(198, 125);
             this.btn20.TabIndex = 6;
             this.btn20.UseVisualStyleBackColor = true;
             // 
@@ -170,9 +170,9 @@
             this.btn11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn11.Enabled = false;
             this.btn11.Font = new System.Drawing.Font("Wide Latin", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn11.Location = new System.Drawing.Point(113, 92);
+            this.btn11.Location = new System.Drawing.Point(207, 134);
             this.btn11.Name = "btn11";
-            this.btn11.Size = new System.Drawing.Size(104, 83);
+            this.btn11.Size = new System.Drawing.Size(198, 125);
             this.btn11.TabIndex = 4;
             this.btn11.UseVisualStyleBackColor = true;
             // 
@@ -181,9 +181,9 @@
             this.btn10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn10.Enabled = false;
             this.btn10.Font = new System.Drawing.Font("Wide Latin", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn10.Location = new System.Drawing.Point(3, 92);
+            this.btn10.Location = new System.Drawing.Point(3, 134);
             this.btn10.Name = "btn10";
-            this.btn10.Size = new System.Drawing.Size(104, 83);
+            this.btn10.Size = new System.Drawing.Size(198, 125);
             this.btn10.TabIndex = 3;
             this.btn10.UseVisualStyleBackColor = true;
             // 
@@ -192,9 +192,9 @@
             this.btn02.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn02.Enabled = false;
             this.btn02.Font = new System.Drawing.Font("Wide Latin", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn02.Location = new System.Drawing.Point(223, 3);
+            this.btn02.Location = new System.Drawing.Point(411, 3);
             this.btn02.Name = "btn02";
-            this.btn02.Size = new System.Drawing.Size(106, 83);
+            this.btn02.Size = new System.Drawing.Size(200, 125);
             this.btn02.TabIndex = 2;
             this.btn02.UseVisualStyleBackColor = true;
             // 
@@ -203,9 +203,9 @@
             this.btn01.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn01.Enabled = false;
             this.btn01.Font = new System.Drawing.Font("Wide Latin", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn01.Location = new System.Drawing.Point(113, 3);
+            this.btn01.Location = new System.Drawing.Point(207, 3);
             this.btn01.Name = "btn01";
-            this.btn01.Size = new System.Drawing.Size(104, 83);
+            this.btn01.Size = new System.Drawing.Size(198, 125);
             this.btn01.TabIndex = 1;
             this.btn01.UseVisualStyleBackColor = true;
             // 
@@ -216,7 +216,7 @@
             this.btn00.Font = new System.Drawing.Font("Wide Latin", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn00.Location = new System.Drawing.Point(3, 3);
             this.btn00.Name = "btn00";
-            this.btn00.Size = new System.Drawing.Size(104, 83);
+            this.btn00.Size = new System.Drawing.Size(198, 125);
             this.btn00.TabIndex = 0;
             this.btn00.UseVisualStyleBackColor = true;
             // 
@@ -225,9 +225,9 @@
             this.btn12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn12.Enabled = false;
             this.btn12.Font = new System.Drawing.Font("Wide Latin", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn12.Location = new System.Drawing.Point(223, 92);
+            this.btn12.Location = new System.Drawing.Point(411, 134);
             this.btn12.Name = "btn12";
-            this.btn12.Size = new System.Drawing.Size(106, 83);
+            this.btn12.Size = new System.Drawing.Size(200, 125);
             this.btn12.TabIndex = 5;
             this.btn12.UseVisualStyleBackColor = true;
             // 
@@ -235,7 +235,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(338, 305);
+            this.ClientSize = new System.Drawing.Size(620, 431);
             this.Controls.Add(this.tlpMainPanel);
             this.Name = "Form1";
             this.Text = "Form1";
